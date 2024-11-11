@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services {
+  background-image: url('C:\Users\Kaoru\Desktop\react\my-react-website\public\images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url('C:\Users\Kaoru\Desktop\react\my-react-website\public\images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('C:\Users\Kaoru\Desktop\react\my-react-website\public\images\leimage.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center; /* Centering text horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensures it takes the full height of the viewport */
+}
+
+/* Adding a max-width to keep content from being too wide */
+.sign-up .content {
+  max-width: 800px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adding a semi-transparent background for better text readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Styling for paragraphs */
+.sign-up p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Section heading styles */
+.sign-up h2 {
+  font-size: 28px;
+  color: #ffeb3b;
+  margin-top: 30px;
+}
+
+/* Styling for the lists */
+.sign-up ul {
+  list-style-type: disc;
+  margin: 20px 0;
+  padding-left: 20px;
+  text-align: left; /* Align lists to the left */
+}
+
+.sign-up ul li {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}

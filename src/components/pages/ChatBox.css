@@ -1,0 +1,122 @@
+.chatbox {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread elements evenly */
+    overflow: hidden;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    margin: 0; /* Remove default margin */
+    height: 92vh; /* Ensure the body takes full height */
+}
+
+
+
+.layout {
+    flex-grow: 1; /* Take available space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sender {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.inputBox {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nameInput {
+    display: flex;
+    flex-direction: column; /* Stack the input and button vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add some padding */
+    margin: auto; /* Center the section */
+}
+
+.nameInput h2 {
+    margin: 20px 0; /* Add vertical spacing around the heading */
+    color: #fff; /* Ensure the text color is white */
+}
+
+.nameInput input {
+    width: 80%; /* Adjust width of input */
+    padding: 10px; /* Add padding to input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border style */
+    background-color: rgba(255, 255, 255, 0.1); /* Input background */
+    color: #fff; /* Input text color */
+}
+
+.nameInput .button {
+    width: 100%; /* Adjust width of button */
+    margin-top: 20px; /* Space between input and button */
+}
+
+.avatar {
+    width: 30px; /* Set the size you want */
+    height: 30px;
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Space between avatar and message */
+}
